@@ -42,10 +42,11 @@
       <script>
       
      const urlParams = new URLSearchParams(window.location.search);
-     const myParam = urlParams.get('utm_campaign'); 
-     document.getElementById("property.cust_Campaign_name.value").value = myParam;
-
-          console.log(myParam);
+     const myParam = urlParams.get('utm_campaign');
+     console.log("I have grabbed the following campaign name: " . myParam); 
+     console.log("I will try to set it now...")
+     document.getElementById("property.cust_Campaign_Name.value").value = myParam;
+     console.log("Success!")  
      </script>
       
       
