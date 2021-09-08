@@ -27,7 +27,7 @@
         
   <div class="form-group">
     <label for="UtmCampaign">UTM Campaign</label>
-    <input type="text" class="form-control" id="property.cust_Campaign_name.value">
+    <input type="text" class="form-control" id="property.cust_Campaign_Name.value">
   </div>        
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -39,11 +39,10 @@
           </div>  
       </div>
       
-      <script>
-      
+     <script>
      const urlParams = new URLSearchParams(window.location.search);
      const myParam = urlParams.get('utm_campaign');
-     console.log("I have grabbed the following campaign name: " . myParam); 
+     console.log(myParam); 
      console.log("I will try to set it now...")
      document.getElementById("property.cust_Campaign_Name.value").value = myParam;
      console.log("Success!")  
